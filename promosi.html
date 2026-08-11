@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Promosi - PT Global Fiber Teknologi</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+/* ================= NAVBAR ================= */
+
+nav{
+    background:#0056b3;
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    color:white;
+    font-size:24px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav ul li a:hover{
+    color:yellow;
+}
+
+/* ================= HEADER ================= */
+
+header{
+    text-align:center;
+    padding:25px 20px;
+    background:#007BFF;
+    color:white;
+}
+
+header h1{
+    font-size:28px;
+    margin-bottom:5px;
+}
+
+header p{
+    font-size:15px;
+}
+
+/* ================= CONTAINER ================= */
+
+.container{
+    width:95%;
+    max-width:1200px;
+    margin:40px auto;
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:20px;
+    align-items:start;
+}
+
+/* ================= CARD ================= */
+
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 0 10px rgba(0,0,0,.15);
+}
+
+.card img,
+.card video{
+    width:100%;
+    height:280px;
+    object-fit:contain;
+    display:block;
+}
+
+.card h2{
+    color:#0056b3;
+    text-align:center;
+    font-size:18px;
+    padding:15px;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#0056b3;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+    width:100%;
+}
+
+/* ================= HP ================= */
+
+@media screen and (max-width:768px){
+
+    nav{
+        flex-direction:column;
+        text-align:center;
+        padding:15px;
+    }
+
+    .logo{
+        margin-bottom:15px;
+    }
+
+    nav ul{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    nav ul li{
+        margin-left:0;
+    }
+
+    header h1{
+        font-size:25px;
+    }
+
+    .container{
+        grid-template-columns:1fr;
+        width:90%;
+        margin:30px auto;
+    }
+
+    .card img,
+    .card video{
+        height:auto;
+        max-height:400px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+
+    <div class="logo">
+        PT GFT
+    </div>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tentang.html">Tentang</a></li>
+        <li><a href="layanan.html">Layanan</a></li>
+        <li><a href="promosi.html">Promosi</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+    </ul>
+
+</nav>
+
+
+<!-- JUDUL -->
+
+<header>
+
+    <h1>Media Promosi</h1>
+
+    <p>PT Global Fiber Teknologi</p>
+
+</header>
+
+
+<!-- SEMUA CARD -->
+
+<div class="container">
+
+    <!-- BROSUR -->
+
+    <div class="card">
+
+        <img 
+            src="WhatsApp Image 2026-08-11 at 13.10.34.jpeg" 
+            alt="Brosur">
+
+        <h2>Brosur</h2>
+
+    </div>
+
+
+    <!-- POSTER -->
+
+    <div class="card">
+
+        <img 
+            src="WhatsApp Image 2026-08-07 at 10.50.54.jpeg" 
+            alt="Poster">
+
+        <h2>Poster</h2>
+
+    </div>
+
+
+    <!-- VIDEO -->
+
+    <div class="card">
+
+        <video controls>
+
+            <source 
+                src="WhatsApp Video 2026-08-07 at 15.26.08.mp4" 
+                type="video/mp4">
+
+        </video>
+
+        <h2>Video Marketing</h2>
+
+    </div>
+
+
+    <!-- FLYER -->
+
+    <div class="card">
+
+        <img 
+            src="Biru Inspirasi Penyedia Internet Terbaik Instagram Post.jpg" 
+            alt="Flyer Promosi">
+
+        <h2>Flyer Promosi</h2>
+
+    </div>
+
+</div>
+
+
+<!-- FOOTER -->
+<!-- PENTING: footer berada DI LUAR container -->
+
+<footer>
+
+    <p>© 2026 PT Global Fiber Teknologi</p>
+
+</footer>
+
+
+</body>
+</html>
